@@ -35,7 +35,7 @@ After installing `kubernetes-plugin` for Jenkins
             * Add Volume
                 * HostPath type
                 * HostPath: /var/run/docker.sock
-                * Mount Path: /var/run/docker.sock
+                * Mount Path: /var/run/docker.sock # 如果报错提示没权限，在宿主机（pod运行的节点），也可以各个节点上执行chmod 666 /var/run/docker.sock
         * Timeout in seconds for Jenkins connection: 300
 * Save
 
